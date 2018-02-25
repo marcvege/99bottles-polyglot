@@ -3,14 +3,10 @@ package com.song;
 public class BeerSong {
 
     public String sing(int bottlesNumber, int versesNumber) {
-        if (versesNumber == 2)
-            return getVerseForBottlesNumber(bottlesNumber) +
-                    getVerseForBottlesNumber(bottlesNumber - 1);
-        if (versesNumber == 3)
-            return getVerseForBottlesNumber(bottlesNumber) +
-                    getVerseForBottlesNumber(bottlesNumber - 1) +
-                    getVerseForBottlesNumber(bottlesNumber - 2);
-        return getVerseForBottlesNumber(bottlesNumber);
+        String verses = "";
+        for (int index = 0; index < versesNumber; index++)
+            verses += getVerseForBottlesNumber(bottlesNumber - index);
+        return verses;
     }
 
     public String singSong() {
