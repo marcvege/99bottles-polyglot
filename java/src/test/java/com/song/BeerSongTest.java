@@ -59,7 +59,6 @@ public class BeerSongTest {
                 beerSong.sing(99, 2));
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void singLastThreeVerses() {
         assertEquals("2 bottles of beer on the wall, 2 bottles of beer.\n" +

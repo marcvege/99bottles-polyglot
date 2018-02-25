@@ -6,6 +6,10 @@ public class BeerSong {
         if (versesNumber == 2)
             return getVerseForBottlesNumber(bottlesNumber) +
                     getVerseForBottlesNumber(bottlesNumber - 1);
+        if (versesNumber == 3)
+            return getVerseForBottlesNumber(bottlesNumber) +
+                    getVerseForBottlesNumber(bottlesNumber - 1) +
+                    getVerseForBottlesNumber(bottlesNumber - 2);
         return getVerseForBottlesNumber(bottlesNumber);
     }
 
