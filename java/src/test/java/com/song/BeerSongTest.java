@@ -1,3 +1,5 @@
+package com.song;
+
 import org.junit.Test;
 import org.junit.Ignore;
 import org.junit.Before;
