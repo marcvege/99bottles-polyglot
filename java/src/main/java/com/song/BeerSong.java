@@ -10,7 +10,7 @@ public class BeerSong {
     }
 
     public String singSong() {
-        return null;
+        return sing(99, 100);
     }
 
     private String getVerseForBottlesNumber(int bottlesNumber) {
