@@ -43,7 +43,6 @@ public class BeerSongTest {
                 beerSong.sing(1, 1));
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void verseWithZeroBottles() {
         assertEquals("No more bottles of beer on the wall, no more bottles of beer.\n" +
