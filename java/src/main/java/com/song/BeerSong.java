@@ -3,6 +3,17 @@ package com.song;
 public class BeerSong {
 
     public String sing(int bottlesNumber, int versesNumber) {
+        if (versesNumber == 2)
+            return getVerseForBottlesNumber(bottlesNumber) +
+                    getVerseForBottlesNumber(bottlesNumber - 1);
+        return getVerseForBottlesNumber(bottlesNumber);
+    }
+
+    public String singSong() {
+        return null;
+    }
+
+    private String getVerseForBottlesNumber(int bottlesNumber) {
         if (bottlesNumber == 0)
             return "No more bottles of beer on the wall, no more bottles of beer.\n" +
                     "Go to the store and buy some more, 99 bottles of beer on the wall.\n\n";
@@ -16,9 +27,5 @@ public class BeerSong {
                 "%d bottles of beer on the wall, %d bottles of beer.\n" +
                         "Take one down and pass it around, %d bottles of beer on the wall.\n\n",
                 bottlesNumber, bottlesNumber, bottlesNumber - 1);
-    }
-
-    public String singSong() {
-        return null;
     }
 }
