@@ -3,7 +3,7 @@ package com.song;
 public class BeerSong {
 
     public String singSong() {
-        return null;
+        return sing(99,100);
     }
 
     public String sing(int bottlesNumber, int versesNumber) {
