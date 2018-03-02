@@ -43,7 +43,6 @@ public class BeerSongTest {
                 beerSong.sing(1, 1));
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void verseWithZeroBottles() {
         assertEquals("No more bottles of beer on the wall, no more bottles of beer.\n" +
@@ -51,7 +50,6 @@ public class BeerSongTest {
                 beerSong.sing(0, 1));
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void singFirstTwoVerses() {
         assertEquals("99 bottles of beer on the wall, 99 bottles of beer.\n" +
